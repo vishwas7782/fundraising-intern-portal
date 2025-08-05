@@ -102,8 +102,11 @@ npm run dev
 
 ## 👨‍💻 Author
 
+## 👨‍💻 Author
+
 **Vishwasjeet Kumar Gupta**  
-Salesforce Developer | B.Tech CSE | Passionate about CRM Solutions  
-[LinkedIn Profile](https://www.linkedin.com/in/vishwasjeet-kumar-gupta-62814018a)
+BTech CSE | FullStack Developer  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vishwasjeet-kumar-gupta-62814018a/)
 
 ---
