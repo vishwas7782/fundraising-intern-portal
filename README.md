@@ -100,8 +100,6 @@ npm run dev
 
 ---
 
-![Marketing Campaign](screenshots/marketing_campaign.png)
-
 ## 👨‍💻 Author
 
 **Vishwasjeet Kumar Gupta**  
