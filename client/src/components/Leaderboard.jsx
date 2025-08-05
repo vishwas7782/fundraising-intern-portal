@@ -32,7 +32,7 @@ const Leaderboard = () => {
     };
 
     return (
-        <motion.div 
+        <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
@@ -45,7 +45,7 @@ const Leaderboard = () => {
                 <h1 className="text-3xl font-bold text-gray-900 text-center">Top Fundraisers</h1>
                 <div className="w-6"></div>
             </div>
-            
+
             {loading ? (
                 <div className="flex justify-center p-10">
                     <Loader2 className="h-12 w-12 animate-spin text-blue-600" />
@@ -53,24 +53,22 @@ const Leaderboard = () => {
             ) : (
                 <div className="space-y-3">
                     {leaders.map((leader, index) => (
-                        <motion.div 
-                            key={leader._id} 
+                        <motion.div
+                            key={leader._id}
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.3, delay: index * 0.05 }}
-                            className={`flex items-center p-4 rounded-xl transition-all ${
-                                leader.name === currentUser ? 'bg-blue-100 scale-105 shadow-lg' : 'bg-gray-50'
-                            }`}
+                            className={`flex items-center p-4 rounded-xl transition-all ${leader.name === currentUser ? 'bg-blue-100 scale-105 shadow-lg' : 'bg-gray-50'
+                                }`}
                         >
-                           <div className="w-12 flex justify-center">{getRankIcon(index)}</div>
-                           <div className={`flex-grow font-semibold ${
-                                leader.name === currentUser ? 'text-blue-600' : 'text-gray-800'
-                           }`}>
+                            <div className="w-12 flex justify-center">{getRankIcon(index)}</div>
+                            <div className={`flex-grow font-semibold ${leader.name === currentUser ? 'text-blue-600' : 'text-gray-800'
+                                }`}>
                                 {leader.name} {leader.name === currentUser && "(You)"}
-                           </div>
-                           <div className="text-lg font-bold text-green-600">
-                               ₹{leader.donations.toLocaleString('en-IN')}
-                           </div>
+                            </div>
+                            <div className="text-lg font-bold text-green-600">
+                                ₹{leader.donations.toLocaleString('en-IN')}
+                            </div>
                         </motion.div>
                     ))}
                 </div>
