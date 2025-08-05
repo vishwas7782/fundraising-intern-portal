@@ -102,8 +102,6 @@ npm run dev
 
 ## 👨‍💻 Author
 
-## 👨‍💻 Author
-
 **Vishwasjeet Kumar Gupta**  
 BTech CSE | FullStack Developer  
 
