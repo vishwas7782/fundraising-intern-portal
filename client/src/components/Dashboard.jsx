@@ -63,7 +63,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('/api/dashboard');
+                const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/dashboard`);
                 setInternData(res.data);
             } catch (err) {
                 console.error("Error fetching dashboard data:", err);
